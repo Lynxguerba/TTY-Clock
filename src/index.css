@@ -1,0 +1,42 @@
+/* TTYClock.css - minimalist tty-clock style */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #000000; /* dark teal blue like tty-clock */
+  font-family: sans-serif, Arial;
+}
+
+.tty-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #cecece;
+  background-color: #00111d;
+  text-align: center;
+}
+
+.tty-time {
+  font-size: clamp(60px, 18vw, 180px);
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+.tty-date {
+  font-size: clamp(14px, 2vw, 22px);
+  margin-top: 10px;
+  color: #7b8b8a;
+  opacity: 0.8;
+}
+/* footer text at the bottom */
+.tty-footer {
+  position: absolute;
+  bottom: 16px;
+  font-size: 14px;
+  color: #6c7a7a;
+  opacity: 0.7;
+}
